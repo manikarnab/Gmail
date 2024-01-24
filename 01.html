@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Campaign Scheduler</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="nav-bar">
+        
+        <ul>
+            <li><a href="#" onclick="showDashboard()">Dashboard</a></li>
+            <li><a href="#" onclick="showCreateCampaign()">Create Campaign</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content" id="dashboard">
+        <h2>Email Campaigns</h2>
+        <ul class="campaign-list" id="campaign-list">
+            <!-- Existing email campaigns will be listed here -->
+        </ul>
+    </div>
+
+    <div class="main-content" id="create-campaign">
+        <h2>Create Campaign</h2>
+        <div class="drag-drop-container" id="drag-drop-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Drag and drop components here:
+        </div>
+        <button onclick="scheduleCampaign()">Send Mail</button>
+    </div>
+</div>
+<form method="post">
+    <input type="button" value="Send Email"
+           onclick="sendEmail()" />
+</form>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="script.js"></script>
+</body>
+</html>

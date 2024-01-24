@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#dashboard {
+    display: none;
+}
+
+#create-campaign {
+    display: none;
+}
+
+.container {
+    display: flex;
+}
+
+.nav-bar {
+    background-color: #b4a6a6;
+    color: black;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.campaign-list {
+    list-style: none;
+    padding: 0;
+}
+
+.campaign {
+    border: 1px solid #ac9a9a;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.drag-drop-container {
+    border: 2px dashed #aaa;
+    min-height: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
