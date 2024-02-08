@@ -24,10 +24,10 @@ function scheduleCampaign() {
     function sendEmail() {
         Email.send({
             Host: "smtp.gmail.com",
-            Username: "manikarnab2002@gmail.com",
-            Password: "Arnab@2002",
-            To: 'cse20006@cemk.ac.in',
-            From: "manikarnab2002@gmail.com",
+            Username: "cse20006@cemk.ac.in",
+            Password: "Cse@2006",
+            To: 'manikarnab2002@gmail.com',
+            From: "cse20006@cemk.ac.in",
             Subject: "Sending Email using javascript",
             Body: "Well that was easy!!",
         })
